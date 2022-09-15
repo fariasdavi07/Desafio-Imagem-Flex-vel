@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio da Imagem Flexível (Desafio Nº7)</title>
+</head>
+<body>
+    <h1>Imagem Flexível</h1>
+    <p>Você está vendo uma imagem completa? Experimente ampliar o tamanho da sua janela para aproveitar a melhor experiência.
+    <br>
+    <picture>
+        <source media="(max-width: 750px)" srcset="paisagem-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="paisagem-m.png" type="image/png">
+        <img src="paisagem-g.png" alt="Imagem flexível">
+    </picture>
+    </p>
+    <p>A seguir as linhas de código para obter este resultado de imagem flexível:
+        <blockquote>
+            <code><em>
+                &lt;picture&gt;
+                <br>&lt;source media="(max-width: 750px)" srcset="foto-p.png" type="image/png"&gt;<br>&lt;source media="(max-width: 1050px) srcset="foto-m.png" type="image/png"&gt;
+                <br>&lt;img src"foto-g.png alt="imagem flexível"
+                <br>&lt;/picture&gt;</em></code>
+        </blockquote>
+    </p>
+    <p>Lembrando que sempre deve haver uma ordem do tamanho das imagens. Comece escrevendo <code><em>&lt;img&gt;</em></code> para colocar a imagem grande no site e posteriormente acrescentar as tags <code><em>&lt;source media type&gt;</em></code> em cima da tag <code><em>&lt;img src alt&gt;</em></code>com as imagens média e pequena (sendo a média em baixo da pequena).</p>
+    
+</body>
+</html>
